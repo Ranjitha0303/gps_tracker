@@ -1,0 +1,8 @@
+#ifndef SPVSOC_CONFIG_H
+#define SPVSOC_CONFIG_H
+
+/* #undef CONFIG_SPV_VSOC_ENABLE */
+/* #undef CONFIG_UIS8850_NWY_N706_CA */
+/* #undef CONFIG_UIS8850_NWY_N706_CB */
+
+#endif

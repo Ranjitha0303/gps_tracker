@@ -1,0 +1,19 @@
+# ninja log v5
+1	196	7357441459316400	hex/appimg_flash_delete.pac	b445f05401466a43
+30	218	7357441458715746	nwy_test_cli/CMakeFiles/nwy_open_app_ldscript.dir/__/ldscripts/app_flashimg.ld.obj	9a29a532db9e89e6
+48	407	7357441461624049	nwy_test_cli/CMakeFiles/nwy_open_app.dir/comm/nwy_test_cli_menu.c.obj	36535f7e918a7498
+96	438	7357441461907282	nwy_test_cli/CMakeFiles/nwy_open_app.dir/comm/nwy_test_cli_utils.c.obj	ff9571e50de731a5
+148	444	7357441461907282	nwy_test_cli/CMakeFiles/nwy_open_app.dir/modules/nwy_test_cli_sdw.c.obj	c93aa837c89b4c44
+14	446	7357441462255380	nwy_test_cli/CMakeFiles/nwy_open_app.dir/comm/nwy_test_cli_adpt.c.obj	fbcdaa14cc5eddbf
+220	480	7357441462567280	nwy_test_cli/CMakeFiles/nwy_open_app.dir/modules/nwy_test_cli_lbs.c.obj	6675868ae2fa348a
+197	532	7357441463056475	nwy_test_cli/CMakeFiles/nwy_open_app.dir/modules/nwy_test_cli_iot.c.obj	d100365d1fb59e6f
+175	563	7357441463409659	nwy_test_cli/CMakeFiles/nwy_open_app.dir/modules/nwy_test_cli_os.c.obj	5b0ddabb83112e3d
+78	719	7357441464934508	nwy_test_cli/CMakeFiles/nwy_open_app.dir/modules/nwy_test_cli_driver.c.obj	4940f061f4169dcd
+111	764	7357441465388236	nwy_test_cli/CMakeFiles/nwy_open_app.dir/modules/nwy_test_cli_tcpip.c.obj	d5ca905287d094f9
+65	783	7357441465554039	nwy_test_cli/CMakeFiles/nwy_open_app.dir/modules/nwy_test_cli_mobile.c.obj	50491ed9bfc70f88
+783	1018	7357441467902283	hex/nwy_open_app.elf	549bc510e67c4a95
+783	1018	7357441467902283	hex/nwy_open_app.img	549bc510e67c4a95
+783	1018	7357441467902283	hex/nwy_open_app.map	549bc510e67c4a95
+783	1018	7357441467902283	hex/nwy_open_app.appimg	549bc510e67c4a95
+1019	1166	7357441469470199	hex/nwy_open_app.sign.img	2f56fa06f5dfaa80
+1166	1286	7357441470652398	hex/nwy_open_app.pac	527d1afa71bddcdb

@@ -1,0 +1,8 @@
+C:/Project/Neoway/N706_OPEN_CB_CM_V30_SDK/N706_OPEN_CB_CM_V30_SDK/out/appimage_debug/CMakeFiles/appimg_flash_delete_pacgen.dir
+C:/Project/Neoway/N706_OPEN_CB_CM_V30_SDK/N706_OPEN_CB_CM_V30_SDK/out/appimage_debug/CMakeFiles/rebuild_cache.dir
+C:/Project/Neoway/N706_OPEN_CB_CM_V30_SDK/N706_OPEN_CB_CM_V30_SDK/out/appimage_debug/CMakeFiles/nwy_open_app_pacgen.dir
+C:/Project/Neoway/N706_OPEN_CB_CM_V30_SDK/N706_OPEN_CB_CM_V30_SDK/out/appimage_debug/CMakeFiles/edit_cache.dir
+C:/Project/Neoway/N706_OPEN_CB_CM_V30_SDK/N706_OPEN_CB_CM_V30_SDK/out/appimage_debug/nwy_test_cli/CMakeFiles/edit_cache.dir
+C:/Project/Neoway/N706_OPEN_CB_CM_V30_SDK/N706_OPEN_CB_CM_V30_SDK/out/appimage_debug/nwy_test_cli/CMakeFiles/nwy_open_app_ldscript.dir
+C:/Project/Neoway/N706_OPEN_CB_CM_V30_SDK/N706_OPEN_CB_CM_V30_SDK/out/appimage_debug/nwy_test_cli/CMakeFiles/nwy_open_app.dir
+C:/Project/Neoway/N706_OPEN_CB_CM_V30_SDK/N706_OPEN_CB_CM_V30_SDK/out/appimage_debug/nwy_test_cli/CMakeFiles/rebuild_cache.dir
