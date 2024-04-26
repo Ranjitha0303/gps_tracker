@@ -296,8 +296,8 @@ void nwy_cipgsmloc_cb(nwy_log_cipgsmloc_result_t *text)
         loc_info.longitude = param->info.data.lng ;
         snprintf(info_string, sizeof(info_string), "%.6f %.6f", loc_info.latitude, loc_info.longitude);
         nwy_test_cli_echo("\r\nMQTT string sent:%s",info_string);
-        nwy_test_cli_echo("lat_my_struct %lf \r\n", loc_info.latitude);
-        nwy_test_cli_echo("lng_my_struct %lf \r\n", loc_info.longitude);
+        //nwy_test_cli_echo("lat_my_struct %lf \r\n", loc_info.latitude);
+        //nwy_test_cli_echo("lng_my_struct %lf \r\n", loc_info.longitude);
     }
     else
     {
@@ -500,10 +500,10 @@ void nwy_wifigsmloc_cb(nwy_log_cipgsmloc_result_t *text)
         // nwy_test_cli_echo("accuracy %lf \r\n", param->info.data.alt);
         loc_info.latitude = param->info.data.lat ;
         loc_info.longitude = param->info.data.lng ;
-        //snprintf(info_string, sizeof(info_string), "%.6f %.6f", loc_info.latitude, loc_info.longitude);
-        //nwy_test_cli_echo("\r\nMQTT string sent:%s", info_string);
-        nwy_test_cli_echo("lat_my_struct %f \r\n", loc_info.latitude);
-        nwy_test_cli_echo("lng_my_struct %f \r\n", loc_info.longitude);
+        snprintf(info_string, sizeof(info_string), "%.6f %.6f", loc_info.latitude, loc_info.longitude);
+        nwy_test_cli_echo("\r\nMQTT string sent:%s", info_string);
+        //nwy_test_cli_echo("lat_my_struct %f \r\n", loc_info.latitude);
+        //nwy_test_cli_echo("lng_my_struct %f \r\n", loc_info.longitude);
     }
     else
         nwy_test_cli_echo(" %s\r\n", param->info.errmsg);

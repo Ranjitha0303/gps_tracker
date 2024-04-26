@@ -1463,7 +1463,7 @@ void nwy_test_cli_mqtt_connect()
         opts.ssl = &sslopts;
     }
     //sptr = nwy_test_cli_input_gets("\r\nPlease input keep_alive: ");
-    sptr = "1";
+    sptr = "300";
     opts.keepAliveInterval = atoi(sptr);
     //sptr = nwy_test_cli_input_gets("\r\nPlease input clean_flag(0/1): ");
     sptr = "0";

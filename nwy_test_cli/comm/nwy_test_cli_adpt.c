@@ -87,15 +87,23 @@ static void nwy_test_cli_main_func(void *param)
     char *sptr = NULL;
     char info_string[100] ;
     nwy_usb_serial_reg_recv_cb((nwy_sio_recv_cb_t)nwy_test_cli_sio_data_proc);
-    nwy_test_cli_get_sim_status();
-    nwy_test_cli_data_create();
+    while(1)
+    {
+        nwy_test_cli_gpio_set_dirt();
+        nwy_test_cli_gpio_set_val();
+        nwy_sleep(10000);
+        nwy_test_cli_gpio_set_val_1();
+        nwy_sleep(10000);
+    }
+    // nwy_test_cli_get_sim_status();
+    // nwy_test_cli_data_create();
     //nwy_test_cli_gnss_open_base();
     //nwy_test_cli_mqtt_connect();
     //while(1)
     //{
-        nwy_test_cli_gnss_open_base();
-        nwy_test_cli_mqtt_connect();
-        nwy_test_cli_mqtt_pub(); 
+        // nwy_test_cli_gnss_open_base();
+        // nwy_test_cli_mqtt_connect();
+        // nwy_test_cli_mqtt_pub(); 
         //nwy_test_cli_gnss_open_base();
         //loc_info.latitude = 2345.988;
         //loc_info.longitude = 234.900;
@@ -105,18 +113,19 @@ static void nwy_test_cli_main_func(void *param)
         // nwy_test_cli_mqtt_pub();        
         // nwy_sleep(10000);
     //}
-    //while (1)
-    //{
-        // nwy_test_cli_menu_display();
-        // sptr = nwy_test_cli_input_gets("\r\nPlease input option: ");
-        // if (sptr[0] == 'q' || sptr[0] == 'Q')
-        // {
-        //     nwy_test_cli_menu_back();
-        // }
-        // else
-        // {
-        //     nwy_test_cli_menu_select(atoi(sptr));
-        // }
+    // while (1)
+    // {
+    //     nwy_test_cli_menu_display();
+    //     sptr = nwy_test_cli_input_gets("\r\nPlease input option: ");
+    //     if (sptr[0] == 'q' || sptr[0] == 'Q')
+    //     {
+    //         nwy_test_cli_menu_back();
+    //     }
+    //     else
+    //     {
+    //         nwy_test_cli_menu_select(atoi(sptr));
+    //     }
+    // }
         // nwy_sleep(1000);
         
         // while(1)
@@ -149,15 +158,17 @@ static void nwy_test_cli_main_func(void *param)
     //             nwy_test_cli_mqtt_state();
     //             if(test_connect == 1)
     //             {
+    //                 nwy_test_cli_gnss_open_base();
     //                 nwy_test_cli_mqtt_pub();
-    //                 nwy_test_cli_echo("\r\ntest_connect == 1\r\n");
+    //                 //nwy_test_cli_echo("\r\ntest_connect == 1\r\n");
     //                 nwy_sleep(10000);
     //             }
     //             else
     //             {
+    //                 nwy_test_cli_gnss_open_base();
     //                 nwy_test_cli_mqtt_connect();
     //                 nwy_test_cli_mqtt_pub(); 
-    //                 nwy_test_cli_echo("\r\ntest_connect == 0\r\n"); 
+    //                 //nwy_test_cli_echo("\r\ntest_connect == 0\r\n"); 
     //                 nwy_sleep(10000);              
     //             } 
 	// 		}
@@ -166,15 +177,17 @@ static void nwy_test_cli_main_func(void *param)
     //             nwy_test_cli_mqtt_state();
     //             if(test_connect == 1)
     //             {
+    //                 nwy_test_cli_gnss_open_base();
     //                 nwy_test_cli_mqtt_pub();
-    //                 nwy_test_cli_echo("\r\ntest_connect == 1\r\n");
+    //                 //nwy_test_cli_echo("\r\ntest_connect == 1\r\n");
     //                 nwy_sleep(10000);
     //             }
     //             else
     //             {
+    //                 nwy_test_cli_gnss_open_base();
     //                 nwy_test_cli_mqtt_connect();
     //                 nwy_test_cli_mqtt_pub(); 
-    //                 nwy_test_cli_echo("\r\ntest_connect == 0\r\n"); 
+    //                 //nwy_test_cli_echo("\r\ntest_connect == 0\r\n"); 
     //                 nwy_sleep(10000);              
     //             } 
 	// 		}

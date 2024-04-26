@@ -838,13 +838,27 @@ void nwy_test_cli_gpio_set_val()
 {
     char *opt;
     uint8_t port, vol;
-    opt = nwy_test_cli_input_gets("\r\nSet the GPIO id:");
+    //opt = nwy_test_cli_input_gets("\r\nSet the GPIO id:");
+    opt = "GPIO4";
     port = atoi(opt);
-    opt = nwy_test_cli_input_gets("\r\nSet the gpio value(0-low level,1-high level):");
+    // opt = nwy_test_cli_input_gets("\r\nSet the gpio value(0-low level,1-high level):");
+    opt = "0";
     vol = atoi(opt);
-
     nwy_gpio_set_value(port, (nwy_value_t)vol);
 }
+void nwy_test_cli_gpio_set_val_1()
+{
+    char *opt;
+    uint8_t port, vol;
+    //opt = nwy_test_cli_input_gets("\r\nSet the GPIO id:");
+    opt = "GPIO4";
+    port = atoi(opt);
+    // opt = nwy_test_cli_input_gets("\r\nSet the gpio value(0-low level,1-high level):");
+    opt = "1";
+    vol = atoi(opt);
+    nwy_gpio_set_value(port, (nwy_value_t)vol);
+}
+
 
 void nwy_test_cli_gpio_get_val()
 {
@@ -861,11 +875,12 @@ void nwy_test_cli_gpio_set_dirt()
 {
     char *opt;
     uint8_t port, dir;
-    opt = nwy_test_cli_input_gets("\r\nSet the GPIO id:");
+    //opt = nwy_test_cli_input_gets("\r\nSet the GPIO id:");
+    opt = "GPIO4";
     port = atoi(opt);
-    opt = nwy_test_cli_input_gets("\r\nSet the GPIO dir(0-input,1-output):");
+    //opt = nwy_test_cli_input_gets("\r\nSet the GPIO dir(0-input,1-output):");
+    opt = "1";
     dir = atoi(opt);
-
     nwy_gpio_set_direction(port, (nwy_dir_mode_t)dir);
 }
 
